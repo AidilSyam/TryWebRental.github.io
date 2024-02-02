@@ -1,0 +1,1538 @@
+INFO - 2023-10-06 15:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-06 16:22:26 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Login.php(22): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Login->login_action()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 16:22:26 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Login.php(22): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->login_action()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-06 16:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 16:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-06 16:51:39 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login_action()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 16:51:39 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login_action()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 16:52:23 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login_action()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 16:52:23 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login_action()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 16:52:26 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login_action()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 16:52:26 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login_action()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:01:34 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login_action()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:01:34 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login_action()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:04:47 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:04:47 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:04:51 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:04:51 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:05:20 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:05:20 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:05:21 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:05:21 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:05:21 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:05:21 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:05:34 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:05:34 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:05:36 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:05:36 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:06:44 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:06:44 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:06:47 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:06:47 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:06:49 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:06:49 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:11:03 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:11:03 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:11:03 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:11:03 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:11:04 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:11:04 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:11:04 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:11:04 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:11:05 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:11:05 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:12:47 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:12:47 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:12:47 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:12:47 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:12:48 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:12:48 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:14:38 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:14:38 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:14:39 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:14:39 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:14:39 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:14:39 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:14:40 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:14:40 --> Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `user` IS NULL
+AND `pass` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:15:23 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:15:23 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:15:24 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:15:24 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:15:24 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:15:24 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:15:25 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:15:25 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:15:25 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:15:25 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:15:25 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:15:25 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:15:25 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:15:25 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:24:22 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:24:22 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-10-06 17:24:23 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(49): App\Models\M_user->get_data(NULL, NULL)
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->login()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:24:23 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` IS NULL
+AND `InputPassword` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pages.php(49): App\Models\M_user->get_data(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-06 17:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-06 17:26:51 --> mysqli_sql_exception: Unknown column 'InputUname' in 'where clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\AuthController.php(22): App\Models\M_user->get_data('aidilsyam', 'syam123')
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\AuthController->login_action()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-06 17:26:51 --> Unknown column 'InputUname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `client`
+WHERE `InputUname` = \'aidilsyam\'
+AND `InputPassword` = \'syam123\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `client`
+WHERE `InputUname` = \'aidilsyam\'
+AND `InputPassword` = \'syam123\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `client`
+WHERE `InputUname` = \'aidilsyam\'
+AND `InputPassword` = \'syam123\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `client`
+WHERE `InputUname` = :InputUname:
+AND `InputPassword` = :InputPassword:', [...], false)
+ 5 APPPATH\Models\M_user.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AuthController.php(22): App\Models\M_user->get_data('aidilsyam', 'syam123')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login_action()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-06 17:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-06 17:28:06 --> Undefined array key "user"
+in APPPATH\Controllers\AuthController.php on line 24.
+ 1 APPPATH\Controllers\AuthController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user"', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\AuthController.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-06 17:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-06 17:28:42 --> Undefined array key "id_pelanggan"
+in APPPATH\Controllers\AuthController.php on line 27.
+ 1 APPPATH\Controllers\AuthController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pelanggan"', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\AuthController.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-06 17:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-06 17:31:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthController.php on line 24.
+ 1 APPPATH\Controllers\AuthController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\AuthController.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-06 17:32:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthController.php on line 24.
+ 1 APPPATH\Controllers\AuthController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\AuthController.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-06 17:32:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthController.php on line 24.
+ 1 APPPATH\Controllers\AuthController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\AuthController.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-06 17:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-06 17:41:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthController.php on line 24.
+ 1 APPPATH\Controllers\AuthController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\AuthController.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-06 17:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-06 17:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-06 17:51:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthController.php on line 24.
+ 1 APPPATH\Controllers\AuthController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\AuthController.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AuthController->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-06 17:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,38 @@
+INFO - 2023-12-19 13:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 13:31:27 --> Invalid file: "V_Pemilik/data_pemilik.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('V_Pemilik/data_pemilik.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/data_pemilik', [], true)
+ 3 APPPATH\Controllers\Template_pemilik.php(14): view('V_Pemilik/data_pemilik')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_pemilik->mobil()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_pemilik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-12-19 14:26:04 --> Invalid file: "V_Pemilik/data_pemilik.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('V_Pemilik/data_pemilik.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/data_pemilik', [], true)
+ 3 APPPATH\Controllers\Template_pemilik.php(14): view('V_Pemilik/data_pemilik')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_pemilik->mobil()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_pemilik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-12-19 14:26:05 --> Invalid file: "V_Pemilik/data_pemilik.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('V_Pemilik/data_pemilik.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/data_pemilik', [], true)
+ 3 APPPATH\Controllers\Template_pemilik.php(14): view('V_Pemilik/data_pemilik')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_pemilik->mobil()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_pemilik))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-19 14:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 14:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 14:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 14:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 14:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 14:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 14:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

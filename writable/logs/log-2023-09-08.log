@@ -1,0 +1,40 @@
+CRITICAL - 2023-09-08 15:15:17 --> Invalid file: "PagesDasboard/template_dasboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('PagesDasboard/template_dasboard.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('PagesDasboard/template_dasboard', [], true)
+ 3 APPPATH\Controllers\PagesDasboard.php(9): view('PagesDasboard/template_dasboard')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PagesDasboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesDasboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-09-08 15:16:27 --> Invalid file: "PagesDasboard/template_dasboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('PagesDasboard/template_dasboard.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('PagesDasboard/template_dasboard', [], true)
+ 3 APPPATH\Controllers\PagesDasboard.php(9): view('PagesDasboard/template_dasboard')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PagesDasboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesDasboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-09-08 15:16:28 --> Invalid file: "PagesDasboard/template_dasboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('PagesDasboard/template_dasboard.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('PagesDasboard/template_dasboard', [], true)
+ 3 APPPATH\Controllers\PagesDasboard.php(9): view('PagesDasboard/template_dasboard')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PagesDasboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesDasboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-09-08 15:16:29 --> Invalid file: "PagesDasboard/template_dasboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('PagesDasboard/template_dasboard.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('PagesDasboard/template_dasboard', [], true)
+ 3 APPPATH\Controllers\PagesDasboard.php(9): view('PagesDasboard/template_dasboard')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PagesDasboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PagesDasboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')

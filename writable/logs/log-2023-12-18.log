@@ -1,0 +1,186 @@
+INFO - 2023-12-18 21:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 21:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 21:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 21:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 21:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 22:00:47 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_ko...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_ko...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_ko...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_ko...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-18 22:00:47 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_kontak` SET `alamat` = \'Jalan mangga no.01 kemantren warungboto yogyakarta\', `tlp` = \'000034r334r34\', `email` = \'easyrent@gmail.com\'
+WHERE `data_kontak`.`id_kontak` IN (\'7\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_kontak` SET `alamat` = \'Jalan mangga no.01 kemantren warungboto yogyakarta\', `tlp` = \'000034r334r34\', `email` = \'easyrent@gmail.com\'
+WHERE `data_kontak`.`id_kontak` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_kontak` SET `alamat` = \'Jalan mangga no.01 kemantren warungboto yogyakarta\', `tlp` = \'000034r334r34\', `email` = \'easyrent@gmail.com\'
+WHERE `data_kontak`.`id_kontak` IN (\'7\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_kontak` SET `alamat` = :alamat:, `tlp` = :tlp:, `email` = :email:
+WHERE `data_kontak`.`id_kontak` IN :data_kontak.id_kontak:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-12-18 22:00:52 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbrental', 3306, '', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_ko...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_ko...', Array, false)
+#3 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#4 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#5 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#6 C:\xampp\htdocs\CI4\app\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', Array)
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-18 22:00:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_kontak` SET `alamat` = :alamat:, `tlp` = :tlp:, `email` = :email:
+WHERE `data_kontak`.`id_kontak` IN :data_kontak.id_kontak:', [...], false)
+ 3 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 4 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 5 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 6 APPPATH\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-12-18 22:00:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbrental', 3306, '', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_ko...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_ko...', Array, false)
+#3 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#4 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#5 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#6 C:\xampp\htdocs\CI4\app\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', Array)
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-18 22:00:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_kontak` SET `alamat` = :alamat:, `tlp` = :tlp:, `email` = :email:
+WHERE `data_kontak`.`id_kontak` IN :data_kontak.id_kontak:', [...], false)
+ 3 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 4 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 5 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 6 APPPATH\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-12-18 22:01:00 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbrental', 3306, '', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_ko...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_ko...', Array, false)
+#3 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#4 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#5 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#6 C:\xampp\htdocs\CI4\app\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', Array)
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-18 22:01:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_kontak` SET `alamat` = :alamat:, `tlp` = :tlp:, `email` = :email:
+WHERE `data_kontak`.`id_kontak` IN :data_kontak.id_kontak:', [...], false)
+ 3 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 4 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 5 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 6 APPPATH\Controllers\MasterKontak.php(35): CodeIgniter\Model->update('7', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterKontak->edit('7')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterKontak))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-18 22:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 22:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 22:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 22:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 22:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

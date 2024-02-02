@@ -1,0 +1,1316 @@
+INFO - 2023-12-28 12:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 12:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 12:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 12:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 12:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 12:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 12:37:04 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`rental`.`data_mobil`, CONSTRAINT `data_mobil_ibfk_1` FOREIGN KEY (`id_pemilik`) REFERENCES `data_pemilik_kendaraan` (`id_pemilik`)) in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 12:37:04 --> Cannot add or update a child row: a foreign key constraint fails (`rental`.`data_mobil`, CONSTRAINT `data_mobil_ibfk_1` FOREIGN KEY (`id_pemilik`) REFERENCES `data_pemilik_kendaraan` (`id_pemilik`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(25): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 12:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 13:09:50 --> mysqli_sql_exception: Table 'rental.data_pemilik' doesn't exist in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(16): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(18): App\Models\M_mastermobil->getDataMobil()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-28 13:09:50 --> Table 'rental.data_pemilik' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `data_mobil`
+JOIN `data_pemilik` ON `data_pemilik`.`id_pemilik`=`data_mobil`.`id_mobil`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_mobil`
+JOIN `data_pemilik` ON `data_pemilik`.`id_pemilik`=`data_mobil`.`id_mobil`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_mobil`
+JOIN `data_pemilik` ON `data_pemilik`.`id_pemilik`=`data_mobil`.`id_mobil`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_mobil`
+JOIN `data_pemilik` ON `data_pemilik`.`id_pemilik`=`data_mobil`.`id_mobil`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\M_mastermobil.php(16): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\MasterMobil.php(18): App\Models\M_mastermobil->getDataMobil()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 13:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 13:14:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`rental`.`data_mobil`, CONSTRAINT `data_mobil_ibfk_1` FOREIGN KEY (`id_pemilik`) REFERENCES `data_pemilik_kendaraan` (`id_pemilik`)) in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 13:14:17 --> Cannot add or update a child row: a foreign key constraint fails (`rental`.`data_mobil`, CONSTRAINT `data_mobil_ibfk_1` FOREIGN KEY (`id_pemilik`) REFERENCES `data_pemilik_kendaraan` (`id_pemilik`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 13:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 13:25:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`rental`.`data_mobil`, CONSTRAINT `data_mobil_ibfk_1` FOREIGN KEY (`id_pemilik`) REFERENCES `data_pemilik_kendaraan` (`id_pemilik`)) in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 13:25:16 --> Cannot add or update a child row: a foreign key constraint fails (`rental`.`data_mobil`, CONSTRAINT `data_mobil_ibfk_1` FOREIGN KEY (`id_pemilik`) REFERENCES `data_pemilik_kendaraan` (`id_pemilik`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 13:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 13:27:04 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 13:27:04 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:, :id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 13:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 13:31:23 --> Allowed fields must be specified for model: "App\Models\M_mastermobil"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\M_mastermobil')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\MasterMobil.php(31): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 13:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 13:31:52 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 13:31:52 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:, :id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 13:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 13:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 13:58:32 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 13:58:32 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AD\', \'Jazz\', \'cp\', \'manual\', \'4\', \'300000\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:, :id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(42): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 14:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 14:14:05 --> Undefined variable $data_pemilik
+in APPPATH\Views\Dasboards\mastermobil.php on line 254.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pemilik', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 254)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\MasterMobil.php(20): view('Dasboards/mastermobil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 14:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 14:14:35 --> Undefined variable $data_pemilik_kendaraan
+in APPPATH\Views\Dasboards\mastermobil.php on line 254.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pemilik_kendaraan', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 254)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\MasterMobil.php(20): view('Dasboards/mastermobil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-12-28 14:18:55 --> Call to undefined method App\Models\M_mastermobil::getDataPemilik
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\MasterMobil.php(20): CodeIgniter\Model->__call('getDataPemilik', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 14:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 14:23:26 --> Undefined variable $data_pemilik_kendaraan
+in APPPATH\Views\Dasboards\mastermobil.php on line 254.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pemilik_kendaraan', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 254)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\MasterMobil.php(22): view('Dasboards/mastermobil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 14:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 14:23:35 --> Undefined variable $data_pemilik_kendaraan
+in APPPATH\Views\Dasboards\mastermobil.php on line 254.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pemilik_kendaraan', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 254)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\MasterMobil.php(22): view('Dasboards/mastermobil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 14:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 14:25:00 --> Undefined array key "nama_pemilik"
+in APPPATH\Views\Dasboards\mastermobil.php on line 255.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pemilik"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 255)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\MasterMobil.php(22): view('Dasboards/mastermobil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 14:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 14:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 14:41:56 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mo...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mo...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mo...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mo...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(31): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(62): App\Models\M_mastermobil->updatePost('17', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 14:41:56 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'4\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'4\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'4\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mobil` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `data_mobil`.`id_mobil` IN :data_mobil.id_mobil:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(31): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(62): App\Models\M_mastermobil->updatePost('17', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 14:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 14:43:19 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 14:43:19 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AB\', \'avanza\', \'seri E\', \'manual\', \'6\', \'350000\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AB\', \'avanza\', \'seri E\', \'manual\', \'6\', \'350000\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AB\', \'avanza\', \'seri E\', \'manual\', \'6\', \'350000\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:, :id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(45): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:00:45 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mo...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mo...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mo...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mo...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(45): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(70): App\Models\M_mastermobil->updatePost('17', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 15:00:45 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'4\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'4\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'4\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mobil` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `data_mobil`.`id_mobil` IN :data_mobil.id_mobil:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(45): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(70): App\Models\M_mastermobil->updatePost('17', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:02:29 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mo...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mo...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mo...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mo...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(46): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(70): App\Models\M_mastermobil->updatePost('17', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 15:02:29 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'4\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'4\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'4\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mobil` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `data_mobil`.`id_mobil` IN :data_mobil.id_mobil:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(46): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(70): App\Models\M_mastermobil->updatePost('17', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:03:05 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(53): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 15:03:05 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AA\', \'kijang\', \'k\', \'manual\', \'8\', \'350000\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AA\', \'kijang\', \'k\', \'manual\', \'8\', \'350000\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AA\', \'kijang\', \'k\', \'manual\', \'8\', \'350000\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:, :id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(53): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:05:22 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(47): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 15:05:22 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AA\', \'kijang\', \'k\', \'manual\', \'8\', \'350000\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AA\', \'kijang\', \'k\', \'manual\', \'8\', \'350000\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AA\', \'kijang\', \'k\', \'manual\', \'8\', \'350000\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:, :id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(47): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:06:32 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mo...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mo...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mo...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mo...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(29): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(64): App\Models\M_mastermobil->updatePost('17', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 15:06:32 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mobil` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `data_mobil`.`id_mobil` IN :data_mobil.id_mobil:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(29): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(64): App\Models\M_mastermobil->updatePost('17', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:15:23 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mo...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mo...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mo...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mo...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(33): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(65): App\Models\M_mastermobil->updatePost('17', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 15:15:23 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mobil` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `data_mobil`.`id_mobil` IN :data_mobil.id_mobil:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(33): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(65): App\Models\M_mastermobil->updatePost('17', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:15:34 --> mysqli_sql_exception: Duplicate entry '3' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mo...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mo...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mo...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mo...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(33): CodeIgniter\Model->update('10', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(65): App\Models\M_mastermobil->updatePost('10', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('10')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 15:15:34 --> Duplicate entry '3' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mobil` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'5\', `harga_sewa` = \'300000\', `id_pemilik` = \' 3\'
+WHERE `data_mobil`.`id_mobil` IN (\'10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mobil` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'5\', `harga_sewa` = \'300000\', `id_pemilik` = \' 3\'
+WHERE `data_mobil`.`id_mobil` IN (\'10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mobil` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'5\', `harga_sewa` = \'300000\', `id_pemilik` = \' 3\'
+WHERE `data_mobil`.`id_mobil` IN (\'10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mobil` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `data_mobil`.`id_mobil` IN :data_mobil.id_mobil:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(33): CodeIgniter\Model->update('10', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(65): App\Models\M_mastermobil->updatePost('10', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('10')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:17:29 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mo...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mo...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mo...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mo...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(45): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(65): App\Models\M_mastermobil->updatePost('17', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 15:17:29 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'cp\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mobil` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `data_mobil`.`id_mobil` IN :data_mobil.id_mobil:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(45): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(65): App\Models\M_mastermobil->updatePost('17', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:17:39 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(48): App\Models\M_mastermobil->insertDataMobil(Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 15:17:39 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AA\', \'kijang\', \'k\', \'manual\', \'8\', \'350000\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AA\', \'kijang\', \'k\', \'manual\', \'8\', \'350000\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AA\', \'kijang\', \'k\', \'manual\', \'8\', \'350000\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:, :id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\M_mastermobil.php(29): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\MasterMobil.php(48): App\Models\M_mastermobil->insertDataMobil([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 15:20:40 --> mysqli_sql_exception: Duplicate entry '1' for key 'id_pemilik' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mo...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mo...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mo...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mo...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(29): CodeIgniter\Model->update('17', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(58): App\Models\M_mastermobil->updatePost('17', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 15:20:40 --> Duplicate entry '1' for key 'id_pemilik'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'c\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'c\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `data_mobil` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'c\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `data_mobil`.`id_mobil` IN (\'17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `data_mobil` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `data_mobil`.`id_mobil` IN :data_mobil.id_mobil:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(29): CodeIgniter\Model->update('17', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(58): App\Models\M_mastermobil->updatePost('17', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('17')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 15:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 15:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 19:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 19:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 19:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 19:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 19:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 19:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-28 19:45:06 --> Call to undefined method App\Models\M_mastermobil::getDataMobil
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\MasterMobil.php(18): CodeIgniter\Model->__call('getDataMobil', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 19:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 19:54:52 --> mysqli_sql_exception: Column 'id_pemilik' in field list is ambiguous in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(49): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-28 19:54:52 --> Column 'id_pemilik' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\M_mastermobil.php(49): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-12-28 19:57:45 --> mysqli_sql_exception: Column 'id_pemilik' in field list is ambiguous in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(49): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-28 19:57:45 --> Column 'id_pemilik' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\M_mastermobil.php(49): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-12-28 19:57:46 --> mysqli_sql_exception: Column 'id_pemilik' in field list is ambiguous in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(49): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-28 19:57:46 --> Column 'id_pemilik' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\M_mastermobil.php(49): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-12-28 20:04:51 --> Call to a member function select() on null
+in APPPATH\Models\M_mastermobil.php on line 46.
+ 1 APPPATH\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-12-28 20:05:17 --> mysqli_sql_exception: Table 'mobil_pemilik.id' doesn't exist in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM (...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM (...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM (...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM (...', Array, false)
+#4 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+#6 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-28 20:05:17 --> Table 'mobil_pemilik.id' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM (`mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`)
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM (`mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`)
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM (`mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`)
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM (`mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`)
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', [], false)
+ 5 APPPATH\Models\M_mastermobil.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+ERROR - 2023-12-28 20:08:38 --> mysqli_sql_exception: Column 'id_pemilik' in field list is ambiguous in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(49): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-28 20:08:38 --> Column 'id_pemilik' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mobil_pemilik`.`id` as `id_mobil`, `id_pemilik`, `no_polisi`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `foto`
+FROM `mobil_pemilik`
+JOIN `data_pemilik_kendaraan` ON `data_pemilik_kendaraan`.`id`=`mobil_pemilik`.`id_pemilik`
+JOIN `data_mobil` ON `data_mobil`.`id`=`mobil_pemilik`.`id_mobil`', [], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\M_mastermobil.php(49): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\MasterMobil.php(73): App\Models\M_mastermobil->getData()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 20:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 20:18:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`rental`.`mobil_pemilik`, CONSTRAINT `mobil_pemilik_ibfk_2` FOREIGN KEY (`id_mobil`) REFERENCES `data_mobil` (`id_mobil`)) in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mo...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(95): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-12-28 20:18:38 --> Cannot add or update a child row: a foreign key constraint fails (`rental`.`mobil_pemilik`, CONSTRAINT `mobil_pemilik_ibfk_2` FOREIGN KEY (`id_mobil`) REFERENCES `data_mobil` (`id_mobil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `mobil_pemilik` (`id_pemilik`) VALUES (\'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mobil_pemilik` (`id_pemilik`) VALUES (\'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mobil_pemilik` (`id_pemilik`) VALUES (\'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mobil_pemilik` (`id_pemilik`) VALUES (:id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\MasterMobil.php(95): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 20:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 20:39:10 --> mysqli_sql_exception: Unknown column 'no_polisi' in 'field list' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(59): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 20:39:10 --> Unknown column 'no_polisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'5\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'5\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'5\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_pemilik` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `mobil_pemilik`.`id` IN :mobil_pemilik.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(59): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 20:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 20:40:37 --> mysqli_sql_exception: Unknown column 'no_polisi' in 'field list' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(59): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 20:40:37 --> Unknown column 'no_polisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_pemilik` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `mobil_pemilik`.`id` IN :mobil_pemilik.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(59): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 20:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 20:44:19 --> mysqli_sql_exception: Unknown column 'no_polisi' in 'field list' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(63): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 20:44:19 --> Unknown column 'no_polisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_pemilik` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `mobil_pemilik`.`id` IN :mobil_pemilik.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(63): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 20:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 20:46:57 --> mysqli_sql_exception: Unknown column 'no_polisi' in 'field list' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(59): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 20:46:57 --> Unknown column 'no_polisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_pemilik` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `mobil_pemilik`.`id` IN :mobil_pemilik.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(59): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 20:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-28 20:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 21:05:09 --> mysqli_sql_exception: Unknown column 'no_polisi' in 'field list' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(59): CodeIgniter\Model->update('3', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('3', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('3')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 21:05:09 --> Unknown column 'no_polisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_pemilik` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'c\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 3\'
+WHERE `mobil_pemilik`.`id` IN (\'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_pemilik` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'c\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 3\'
+WHERE `mobil_pemilik`.`id` IN (\'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_pemilik` SET `no_polisi` = \'DD4043AD\', `mobil` = \'Jazz\', `type_mobil` = \'c\', `transmisi` = \'manual\', `kapasitas_penumpang` = \'6\', `harga_sewa` = \'300000\', `id_pemilik` = \' 3\'
+WHERE `mobil_pemilik`.`id` IN (\'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_pemilik` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `mobil_pemilik`.`id` IN :mobil_pemilik.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(59): CodeIgniter\Model->update('3', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('3', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('3')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-12-28 21:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-28 21:41:08 --> mysqli_sql_exception: Unknown column 'no_polisi' in 'field list' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_p...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_p...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_p...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_p...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4\app\Models\M_mastermobil.php(59): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\CI4\app\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-12-28 21:41:08 --> Unknown column 'no_polisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'8\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'8\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobil_pemilik` SET `no_polisi` = \'AB123XP\', `mobil` = \'Brio\', `type_mobil` = \'Satya S\', `transmisi` = \'Manual\', `kapasitas_penumpang` = \'8\', `harga_sewa` = \'300000\', `id_pemilik` = \' 1\'
+WHERE `mobil_pemilik`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mobil_pemilik` SET `no_polisi` = :no_polisi:, `mobil` = :mobil:, `type_mobil` = :type_mobil:, `transmisi` = :transmisi:, `kapasitas_penumpang` = :kapasitas_penumpang:, `harga_sewa` = :harga_sewa:, `id_pemilik` = :id_pemilik:
+WHERE `mobil_pemilik`.`id` IN :mobil_pemilik.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Models\M_mastermobil.php(59): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\MasterMobil.php(112): App\Models\M_mastermobil->updatePost('1', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->edit('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')

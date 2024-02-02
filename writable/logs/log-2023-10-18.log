@@ -1,0 +1,495 @@
+ERROR - 2023-10-18 08:52:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'dbrental', 3306, '', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\M_home.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(17): App\Models\M_Home->getDataMobil()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CI4\app\Models\M_home.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(17): App\Models\M_Home->getDataMobil()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->index()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-10-18 08:52:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_mobil`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_home.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Pages.php(17): App\Models\M_Home->getDataMobil()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:10:29 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:15:03 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:15:04 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:21:32 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:23:24 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:24:05 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:24:05 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:31:27 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:31:38 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:32:04 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 09:32:06 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-18 09:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-18 09:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 12:12:28 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:17:37 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:23:07 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:23:08 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:23:09 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:23:10 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:23:10 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:24:25 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:24:47 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:24:50 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2023-10-18 12:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-18 12:25:07 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 57.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:29:08 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:29:09 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:29:09 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:29:09 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:31:19 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:33:55 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:33:55 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:33:56 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:33:56 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:33:56 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:33:56 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:33:56 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:33:57 --> Undefined variable $data_mobil
+in APPPATH\Views\Dasboards\mastermobil.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_mobil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\Template_dasboards.php(14): view('Dasboards/mastermobil')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Template_dasboards->mastermobil()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template_dasboards))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:49:46 --> syntax error, unexpected token "}"
+in APPPATH\Views\Dasboards\mastermobil.php on line 85.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 3 APPPATH\Controllers\MasterMobil.php(14): view('Dasboards/mastermobil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 12:58:29 --> Undefined array key 1
+in APPPATH\Views\Dasboards\mastermobil.php on line 58.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\MasterMobil.php(14): view('Dasboards/mastermobil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 13:00:28 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266354688 bytes)
+in APPPATH\Views\Dasboards\mastermobil.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-18 13:10:13 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266354688 bytes)
+in APPPATH\Views\Dasboards\mastermobil.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-18 13:12:28 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266354688 bytes)
+in APPPATH\Views\Dasboards\mastermobil.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-18 13:17:55 --> Undefined variable $bil
+in APPPATH\Views\Dasboards\mastermobil.php on line 59.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bil', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\MasterMobil.php(14): view('Dasboards/mastermobil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 13:18:13 --> Array to string conversion
+in APPPATH\Views\Dasboards\mastermobil.php on line 60.
+ 1 APPPATH\Views\Dasboards\mastermobil.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastermobil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 5 APPPATH\Controllers\MasterMobil.php(14): view('Dasboards/mastermobil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+CRITICAL - 2023-10-18 13:18:44 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266354688 bytes)
+in APPPATH\Views\Dasboards\mastermobil.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-18 13:24:10 --> Unsupported operand types: int + array
+in APPPATH\Views\Dasboards\mastermobil.php on line 59.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastermobil', [], true)
+ 4 APPPATH\Controllers\MasterMobil.php(14): view('Dasboards/mastermobil', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterMobil->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterMobil))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')

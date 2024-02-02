@@ -1,0 +1,1586 @@
+INFO - 2024-01-17 09:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:04:50 --> Undefined array key "id_pemilik"
+in APPPATH\Controllers\P_datamobil.php on line 67.
+ 1 APPPATH\Controllers\P_datamobil.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pemilik"', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\P_datamobil.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:06:36 --> Undefined array key "id_pemilik"
+in APPPATH\Controllers\P_datamobil.php on line 68.
+ 1 APPPATH\Controllers\P_datamobil.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pemilik"', 'C:\\xampp\\htdocs\\CI4\\app\\Controllers\\P_datamobil.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 09:07:51 --> mysqli_sql_exception: Column 'id_pemilik' cannot be null in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CI4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CI4\app\Controllers\P_datamobil.php(71): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-01-17 09:07:51 --> Column 'id_pemilik' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AG\', \'Rush\', \'G\', \'manual\', \'6\', \'400000\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AG\', \'Rush\', \'G\', \'manual\', \'6\', \'400000\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AG\', \'Rush\', \'G\', \'manual\', \'6\', \'400000\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:, :id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\P_datamobil.php(71): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 09:08:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`rental`.`data_mobil`, CONSTRAINT `data_mobil_ibfk_1` FOREIGN KEY (`id_pemilik`) REFERENCES `data_pemilik_kendaraan` (`id_pemilik`)) in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CI4\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CI4\app\Controllers\P_datamobil.php(71): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+#11 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-01-17 09:08:50 --> Cannot add or update a child row: a foreign key constraint fails (`rental`.`data_mobil`, CONSTRAINT `data_mobil_ibfk_1` FOREIGN KEY (`id_pemilik`) REFERENCES `data_pemilik_kendaraan` (`id_pemilik`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AG\', \'Rush\', \'G\', \'manual\', \'6\', \'400000\', 0)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AG\', \'Rush\', \'G\', \'manual\', \'6\', \'400000\', 0)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (\'DD4043AG\', \'Rush\', \'G\', \'manual\', \'6\', \'400000\', 0)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_mobil` (`no_polisi`, `mobil`, `type_mobil`, `transmisi`, `kapasitas_penumpang`, `harga_sewa`, `id_pemilik`) VALUES (:no_polisi:, :mobil:, :type_mobil:, :transmisi:, :kapasitas_penumpang:, :harga_sewa:, :id_pemilik:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\P_datamobil.php(71): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:13:08 --> Call to undefined method App\Models\M_user::with
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\P_datamobil.php(56): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:15:48 --> Call to undefined method App\Models\M_pemilik::with
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\P_datamobil.php(59): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:20:07 --> Call to undefined method App\Models\M_user::with
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\P_datamobil.php(59): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:25:23 --> Call to undefined method App\Models\M_user::with
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\P_datamobil.php(59): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:29:17 --> Call to undefined method App\Models\M_user::with
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\P_datamobil.php(59): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:30:28 --> Call to undefined method App\Models\M_user::with
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\P_datamobil.php(59): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:30:40 --> Call to undefined method App\Models\M_user::with
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\P_datamobil.php(59): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:31:51 --> Call to undefined method App\Models\M_user::with
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\P_datamobil.php(59): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 09:39:35 --> Call to a member function where() on null
+in APPPATH\Controllers\P_datamobil.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datamobil->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datamobil))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 09:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:29:23 --> Undefined array key "nama_pelanggan"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pelanggan"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:32:45 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:32:46 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:32:47 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:34:59 --> Undefined array key "bukti_transfer"
+in APPPATH\Views\Dasboards\mastersewa.php on line 62.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bukti_transfer"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:35:17 --> Undefined array key "bukti_transfer"
+in APPPATH\Views\Dasboards\mastersewa.php on line 62.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bukti_transfer"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:35:18 --> Undefined array key "bukti_transfer"
+in APPPATH\Views\Dasboards\mastersewa.php on line 62.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bukti_transfer"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:35:49 --> Undefined array key "nama_pelanggan"
+in APPPATH\Views\Dasboards\mastersewa.php on line 89.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pelanggan"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:35:51 --> Undefined array key "nama_pelanggan"
+in APPPATH\Views\Dasboards\mastersewa.php on line 89.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pelanggan"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:35:51 --> Undefined array key "nama_pelanggan"
+in APPPATH\Views\Dasboards\mastersewa.php on line 89.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pelanggan"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:36:21 --> Undefined array key "nama_pelanggan"
+in APPPATH\Views\Dasboards\mastersewa.php on line 89.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pelanggan"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:36:22 --> Undefined array key "nama_pelanggan"
+in APPPATH\Views\Dasboards\mastersewa.php on line 89.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pelanggan"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:36:51 --> Undefined array key "nama_pelanggan"
+in APPPATH\Views\Dasboards\mastersewa.php on line 89.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pelanggan"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 11:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 12:24:16 --> Undefined array key "lama_sewa"
+in APPPATH\Views\V_Pemilik\datasewa.php on line 109.
+ 1 APPPATH\Views\V_Pemilik\datasewa.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lama_sewa"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php', 109)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/datasewa', [], true)
+ 5 APPPATH\Controllers\P_datasewa.php(20): view('V_Pemilik/datasewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 12:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 13:32:52 --> mysqli_sql_exception: Unknown column 'data_pemilik_kendara.id_pemilik' in 'on clause' in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 13:32:52 --> Unknown column 'data_pemilik_kendara.id_pemilik' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendara`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendara`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendara`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendara`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 13:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 13:37:53 --> Undefined array key "nama"
+in APPPATH\Views\V_Pemilik\datasewa.php on line 55.
+ 1 APPPATH\Views\V_Pemilik\datasewa.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/datasewa', [], true)
+ 5 APPPATH\Controllers\P_datasewa.php(42): view('V_Pemilik/datasewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 13:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 13:41:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3 in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 13:41:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 13:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 13:43:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3 in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 13:43:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 13:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 13:43:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3 in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 13:43:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 13:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 13:49:00 --> Undefined array key "nama"
+in APPPATH\Views\V_Pemilik\datasewa.php on line 55.
+ 1 APPPATH\Views\V_Pemilik\datasewa.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/datasewa', [], true)
+ 5 APPPATH\Controllers\P_datasewa.php(42): view('V_Pemilik/datasewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 13:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 13:49:01 --> Undefined array key "nama"
+in APPPATH\Views\V_Pemilik\datasewa.php on line 55.
+ 1 APPPATH\Views\V_Pemilik\datasewa.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/datasewa', [], true)
+ 5 APPPATH\Controllers\P_datasewa.php(42): view('V_Pemilik/datasewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 13:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 13:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 14:44:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `dat...' at line 3 in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 14:44:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `dat...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`nama =` `data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`nama =` `data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`nama =` `data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`nama =` `data_klien`.`id_pengguna`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 14:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 14:45:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3 in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 14:45:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`nama =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`nama =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`nama =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`nama =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 14:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 14:46:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3 in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 14:46:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 14:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 14:46:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3 in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 14:46:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 14:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 14:46:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3 in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 14:46:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 14:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 14:46:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3 in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_se...', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_se...')
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_se...')
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_se...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-17 14:46:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `data_sewa`.`kode_sewa`, `data_sewa`.`id_pengguna`, `data_sewa`.`id_mobil`, `data_sewa`.`tgl_sewa`, `data_sewa`.`tgl_kbl`
+FROM `data_sewa`
+JOIN `data_klien` ON `data_sewa`.`id_pengguna` = `data_klien`.`id_pengguna, data_sewa`.`id_pengguna =` `data_klien`.`nama`
+JOIN `data_mobil` ON `data_sewa`.`id_mobil` = `data_mobil`.`id_mobil`
+JOIN `data_pemilik_kendaraan` ON `data_sewa`.`id_pemilik` = `data_pemilik_kendaraan`.`id_pemilik`
+JOIN `user` ON `data_pemilik_kendaraan`.`id_user` = `user`.`id_user`
+WHERE `data_pemilik_kendaraan`.`id_user` = :data_pemilik_kendaraan.id_user:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MP_datasewa.php(24): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\P_datasewa.php(40): App\Models\MP_datasewa->getSewa('4')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 14:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 14:54:25 --> Undefined array key "nama"
+in APPPATH\Views\V_Pemilik\datasewa.php on line 55.
+ 1 APPPATH\Views\V_Pemilik\datasewa.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/datasewa', [], true)
+ 5 APPPATH\Controllers\P_datasewa.php(42): view('V_Pemilik/datasewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 14:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 14:56:17 --> Cannot access offset of type string on string
+in APPPATH\Views\V_Pemilik\datasewa.php on line 55.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/datasewa', [], true)
+ 4 APPPATH\Controllers\P_datasewa.php(42): view('V_Pemilik/datasewa', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 14:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 14:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 14:58:47 --> Undefined array key "nama"
+in APPPATH\Views\V_Pemilik\datasewa.php on line 55.
+ 1 APPPATH\Views\V_Pemilik\datasewa.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/datasewa', [], true)
+ 5 APPPATH\Controllers\P_datasewa.php(42): view('V_Pemilik/datasewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:05:54 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:08:21 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:08:22 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:08:23 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:08:24 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:08:24 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:08:25 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:09:27 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:12:11 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\Dasboards\mastersewa.php on line 52.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:12:58 --> Call to a member function findAll() on null
+in APPPATH\Controllers\MasterSewa.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:13:13 --> Call to a member function find() on null
+in APPPATH\Controllers\MasterSewa.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:13:49 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:15:11 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:15:12 --> Undefined array key "nama"
+in APPPATH\Views\Dasboards\mastersewa.php on line 56.
+ 1 APPPATH\Views\Dasboards\mastersewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\Dasboards\\mastersewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Dasboards/mastersewa', [], true)
+ 5 APPPATH\Controllers\MasterSewa.php(20): view('Dasboards/mastersewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MasterSewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MasterSewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 15:20:38 --> Undefined array key "mobil"
+in APPPATH\Views\V_Pemilik\datasewa.php on line 56.
+ 1 APPPATH\Views\V_Pemilik\datasewa.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mobil"', 'C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4\\app\\Views\\V_Pemilik\\datasewa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('V_Pemilik/datasewa', [], true)
+ 5 APPPATH\Controllers\P_datasewa.php(42): view('V_Pemilik/datasewa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\P_datasewa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P_datasewa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 15:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 15:57:53 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'rental', 3306, '', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\M_home.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(21): App\Models\M_Home->getDataMobil()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->home()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CI4\app\Models\M_home.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(21): App\Models\M_Home->getDataMobil()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->home()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-01-17 15:57:53 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_mobil`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_home.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Pages.php(21): App\Models\M_Home->getDataMobil()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->home()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
+INFO - 2024-01-17 15:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 15:57:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'rental', 3306, '', 0)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4\app\Models\M_home.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(21): App\Models\M_Home->getDataMobil()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->home()
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CI4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CI4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\CI4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CI4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\CI4\app\Models\M_home.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\CI4\app\Controllers\Pages.php(21): App\Models\M_Home->getDataMobil()
+#7 C:\xampp\htdocs\CI4\system\CodeIgniter.php(934): App\Controllers\Pages->home()
+#8 C:\xampp\htdocs\CI4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#9 C:\xampp\htdocs\CI4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-01-17 15:57:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_mobil`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_home.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Pages.php(21): App\Models\M_Home->getDataMobil()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->home()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4\\public\\index.php')
