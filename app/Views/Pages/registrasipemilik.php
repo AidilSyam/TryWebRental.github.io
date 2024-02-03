@@ -113,6 +113,16 @@
                     </div>
                 </div>
             </form>
+            <div class="success-message" id="successMessage">
+                <center>
+                    <!-- <p>Akun Anda berhasil didaftarkan!</p> -->
+                    <?php if (session()->getFlashData('success')) : ?>
+                        <?= session()->getFlashData('success') ?>
+                    <?php elseif (session()->getFlashData('errors')) : ?>
+                        <?= session()->getFlashData('errors') ?>
+                    <?php endif; ?>
+                </center>
+            </div>
         </div>
     </div>
 

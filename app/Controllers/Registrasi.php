@@ -48,9 +48,9 @@ class Registrasi extends BaseController
                 $this->registrasi->registrasi_akun($dataUser, $dataPengguna);
                 // $this->registrasi->insertklien($dataPengguna);
 
-                return redirect()->to('/login')->with('success', 'Berhasil Membuat Akun, silahkan login');
+                return redirect()->to(base_url('registrasi/pelanggan'))->with('success', 'Berhasil Membuat Akun, silahkan close untuk melakukan login');
             } else {
-                return redirect()->to('Pages/registrasi')->with('errors', 'Gagal Membuat akun');
+                return redirect()->to(base_url('registrasi/pelanggan'))->with('errors', 'Gagal Membuat Akun');
             }
         }
     }
@@ -82,9 +82,9 @@ class Registrasi extends BaseController
                 $this->registrasi_pemilik->registrasi_akun_pemilik($dataUser, $dataPemilik);
                 // $this->registrasi->insertklien($dataPengguna);
 
-                return redirect()->to('/login')->with('success', 'Berhasil Membuat Akun, silahkan login');
+                return redirect()->to(base_url('registrasi/pemilik'))->with('success', 'Berhasil Membuat Akun, silahkan close untuk melakukan login');
             } else {
-                return redirect()->to('Pages/registrasi')->with('errors', 'Gagal Membuat akun');
+                return redirect()->to(base_url('registrasi/pemilik'))->with('errors', 'Gagal Membuat Akun');
             }
         }
     }

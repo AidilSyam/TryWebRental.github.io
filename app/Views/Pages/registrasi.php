@@ -139,39 +139,6 @@
             </div>
         </div>
     </div>
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector("form").addEventListener("submit", function(event) {
-                event.preventDefault(); // Menghentikan form untuk melakukan submit default
-
-                // Tambahkan logika validasi form jika diperlukan
-
-                // Tampilkan div sukses
-                document.getElementById("successMessage").style.display = "block";
-
-                // Anda juga bisa menambahkan logika redirect atau tindakan lainnya setelah pendaftaran berhasil
-            });
-        });
-    </script> -->
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector("form").addEventListener("submit", function(event) {
-                event.preventDefault(); // Menghentikan form untuk melakukan submit default
-
-                // Tambahkan logika validasi form jika diperlukan
-
-                console.log("Form submitted!"); // Tambahkan log ini
-
-                // Simpan pesan sukses di variabel
-                let successMessage = document.getElementById("successMessage");
-
-                // Tampilkan pesan sukses
-                successMessage.style.display = "block";
-
-                // Anda juga bisa menambahkan logika redirect atau tindakan lainnya setelah pendaftaran berhasil
-            });
-        });
-    </script> -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
