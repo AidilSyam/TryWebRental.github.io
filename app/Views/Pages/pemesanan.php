@@ -36,14 +36,14 @@
             </div>
         </form>
         <center>
-            <a href="#transaksi" type="button" data-bs-toggle="modal" class="btn mt-5" style="border-radius: 10px;background: #0E138E;color:aliceblue;">Lanjut</a>
+            <a href="#transaksi" type="button" data-bs-toggle="modal" class="btn mt-5" style="border-radius: 10px;background: #0E138E;color:aliceblue;">Bayar</a>
         </center>
     </div>
     <div class="modal fade" id="transaksi" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="headerbayar">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title" id="headerbayar">Bayar ke sini</h1>
+                    <h1 class="modal-title" id="headerbayar">Pembayaran</h1>
                 </div>
                 <div class="modal-body">
                     <table>
@@ -57,6 +57,9 @@
                             <li><input type="file" name="bukti_transaksi" id="bukti_transaksi"></li>
                         </ul>
                     </table>
+                    <center>
+                        <button type="button" class="btn mt-5" style="border-radius: 10px;background: #0E138E;color:aliceblue;">Selesai</a>
+                    </center>
                 </div>
             </div>
         </div>

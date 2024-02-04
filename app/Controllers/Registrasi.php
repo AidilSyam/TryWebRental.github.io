@@ -7,9 +7,9 @@ use App\Models\M_registrasipemilik;
 
 class Registrasi extends BaseController
 {
-
     protected $registrasi;
     protected $registrasi_pemilik;
+
     function __construct()
     {
         $this->registrasi = new M_registrasi();

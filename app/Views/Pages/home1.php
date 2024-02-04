@@ -176,7 +176,7 @@ $isAllowedRole = in_array($role, $allowedRoles);
 
             <?php if ($isUserLoggedIn) : ?>
                 // Jika pengguna sudah login, lanjutkan ke halaman pemesanan dengan ID mobil
-                window.location.href = '<?= base_url('/pemesanan') ?>?' + carId;
+                window.location.href = '<?= base_url('/pemesanan') ?>/' + carId;
             <?php else : ?>
                 // Jika pengguna belum login, tampilkan pesan dan arahkan ke halaman login
                 alert('Silakan login untuk dapat melakukan pemesanan.');

@@ -53,7 +53,7 @@ $routes->get('registrasi/pemilik', 'Pages::registrasipemilik');
 $routes->add('registrasi/pemilik', 'Registrasi::registrasi_pemilik');
 
 $routes->group('', ['namespace' => 'App\Controllers', 'filter' => 'auth'], function ($routes) {
-    $routes->get('pemesanan?(:segment)', 'Pages::pemesanan');
+    $routes->get('pemesanan/(:segment)', 'Pages::pemesanan');
     $routes->get('akun', 'K_akun::index');
     $routes->add('akun/ubah/(:segment)', 'K_akun::edit/$1');
     $routes->add('akun/pengaturan/ubah/(:segment)', 'K_akun::edit_pengaturan/$1');
