@@ -71,16 +71,16 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav w-50">
                         <li class="nav-item w-25">
-                            <a class="nav-link text-center" aria-current="page" href="home">Home</a>
+                            <a class="nav-link text-center" aria-current="page" href="<?= base_url('home') ?>">Home</a>
                         </li>
                         <li class="nav-item w-25">
-                            <a class="nav-link text-center" href="profil">Profil</a>
+                            <a class="nav-link text-center" href="<?= base_url('profil') ?>">Profil</a>
                         </li>
                         <li class="nav-item w-25">
-                            <a class="nav-link text-center" href="galeri">Galery</a>
+                            <a class="nav-link text-center" href="<?= base_url('galeri') ?>">Galery</a>
                         </li>
                         <li class="nav-item w-25">
-                            <a class="nav-link text-center" href="kontak">Kontak</a>
+                            <a class="nav-link text-center" href="<?= base_url('kontak') ?>">Kontak</a>
                         </li>
                         <!-- <li class="nav-item w-25">
                             <a class="nav-link text-center" href="<?= base_url('/login') ?>">Login</a>

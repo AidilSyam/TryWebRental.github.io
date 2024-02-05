@@ -25,6 +25,7 @@
                 <label for="lamasewa" class="form-label col">Lama Sewa</label>
                 <input type="text" class="form-control col" id="lamasewa" style="background: rgba(255, 251, 251, 0.59)" readonly>
             </div>
+
             <div class="mb-3 row mt-3">
                 <label for="totaltarif" class="form-label col">Total Tarif</label>
                 <input type="totaltarif" class="form-control col" id="totaltarif" style="background: rgba(255, 251, 251, 0.59)" readonly>
@@ -71,10 +72,12 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Dapatkan elemen input untuk Tanggal Sewa, Tanggal Kembali, dan Lama Sewa
+        // Ambil elemen input untuk Tanggal Sewa, Tanggal Kembali, dan Lama Sewa
         var tglSewaInput = document.getElementById('tgl_sewa');
         var tglKembaliInput = document.getElementById('tgl_kbl');
         var lamaSewaInput = document.getElementById('lamasewa');
+        var hargaSewaInput = document.getElementById('harga_sewa');
+        var totalTarifInput = document.getElementById('totaltarif');
 
         // Tambahkan event listener untuk memperbarui Lama Sewa ketika Tanggal Sewa atau Tanggal Kembali berubah
         tglSewaInput.addEventListener('change', updateLamaSewa);
@@ -91,12 +94,16 @@
                 var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
                 // Perbarui nilai input Lama Sewa
-                //lamaSewaInput.value = daysDiff > 0 ? daysDiff : 0;
                 lamaSewaInput.value = daysDiff > 0 ? daysDiff + " hari" : "0 hari";
+
+                // Hitung total tarif berdasarkan lama sewa dan harga sewa per hari
+                var hargaSewa = parseFloat(hargaSewaInput.value);
+                var totalTarif = daysDiff * hargaSewa;
+
+                // Perbarui nilai input Total Tarif
+                totalTarifInput.value = totalTarif.toFixed(2);
             }
         }
     });
 </script>
-
-
 <?= $this->endSection(); ?>

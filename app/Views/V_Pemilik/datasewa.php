@@ -40,6 +40,8 @@
                         <th scope="col">ID Mobil (mobil)</th>
                         <th scope="col">Tanggal Sewa</th>
                         <th scope="col">Tanggal Kembali</th>
+                        <th scope="col">Lama Sewa</th>
+                        <th scope="col">Total Harga</th>
                         <th scope="col">
                             <center>Aksi</center>
                         </th>
@@ -53,6 +55,8 @@
                             <td><?= $sewa['id_mobil'] ?> (<?= $sewa['mobil'] ?>)</td>
                             <td><?= $sewa['tgl_sewa'] ?></td>
                             <td><?= $sewa['tgl_kbl'] ?></td>
+                            <td><?= $sewa['lama_sewa'] ?></td>
+                            <td><?= $sewa['total_harga_sewa'] ?></td>
                             <td>
                                 <center>
                                     <!--<a type="button" class="btn" style="border-radius: 10px; background:#392BD8;" data-kode="<?= $sewa['kode_sewa'] ?>">lihat</a>-->
@@ -83,7 +87,7 @@
                                         </div>
                                         <div class="mb-3 row">
                                             <label class="form-label col ">No Polisi</label>
-                                            <label class="form-label col ">....</label>
+                                            <label class="form-label col "><?= $sewa['no_polisi'] ?></label>
                                         </div>
                                         <div class="mb-3 row">
                                             <label class="form-label col ">Tanggal Sewa</label>
@@ -92,6 +96,14 @@
                                         <div class="mb-3 row">
                                             <label class="form-label col ">Tanggal Kembali</label>
                                             <label class="form-label col "><?= $sewa['tgl_kbl'] ?></label>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="form-label col ">Lama Sewa</label>
+                                            <label class="form-label col "><?= $sewa['lama_sewa'] ?></label>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label class="form-label col ">Total Harga</label>
+                                            <label class="form-label col "><?= $sewa['total_harga_sewa'] ?></label>
                                         </div>
 
                                         <div class="row">
