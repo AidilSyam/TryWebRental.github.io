@@ -53,12 +53,15 @@ $routes->get('registrasi/pemilik', 'Pages::registrasipemilik');
 $routes->add('registrasi/pemilik', 'Registrasi::registrasi_pemilik');
 
 $routes->group('', ['namespace' => 'App\Controllers', 'filter' => 'auth'], function ($routes) {
-    $routes->get('pemesanan/(:segment)', 'Pages::pemesanan');
+    //$routes->get('pemesanan/(:segment)', 'Pages::pemesanan');
+    $routes->get('pemesanan/(:num)', 'Pemesanan::pemesanan/$1');
+    $routes->add('pemesanan/proses', 'Pemesanan::prosespemesanan');
     $routes->get('akun', 'K_akun::index');
     $routes->add('akun/ubah/(:segment)', 'K_akun::edit/$1');
     $routes->add('akun/pengaturan/ubah/(:segment)', 'K_akun::edit_pengaturan/$1');
 
-    $routes->get('pesanan?(:segment)', 'Pages::pemesanan');
+    //$routes->get('pesanan', 'Pages::pesanan');
+    $routes->get('pesanan', 'Pemesanan::pesanan');
 });
 
 $routes->match(['get', 'post'], 'login/user', 'AuthController::login'); // Proses login

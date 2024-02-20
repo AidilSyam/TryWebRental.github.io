@@ -44,6 +44,10 @@ $isAllowedRole = in_array($role, $allowedRoles);
         <div class="card bg-transparent border-0">
             <div class="card-body row justify-content-end">
                 <input type="search" class="form-control rounded-pill border-black col-lg-4" placeholder="Pencarian Mobil..." style="margin-right: 10px; background: rgba(255, 255, 255, 0.12);width:20vw;height: 1.5em;max-width: 500px;">
+                <form action="<?= base_url('home') ?>" method="get">
+                    <input type="text" name="keyword" placeholder="Cari mobil...">
+                    <button type="submit">Cari</button>
+                </form>
             </div>
         </div>
     </div>
@@ -141,6 +145,7 @@ $isAllowedRole = in_array($role, $allowedRoles);
                                                 <!-- <a type="button" id="pesanButton" class="btn btn-primary" href="<?= base_url('pemesanan') ?>">Pesan</a> -->
                                                 <!-- Teruskan ID mobil ke fungsi JavaScript -->
                                                 <a type="button" class="btn btn-primary pesanButton" data-car-id="<?= $mobils['id_mobil'] ?>">Pesan</a>
+                                                <!-- <a href="<?= base_url('/pemesanan/' . $mobils['id_mobil']) ?>" type="button" class="btn btn-primary pesanButton">Pesan</a> -->
                                             </center>
                                         </div>
                                     </div>
@@ -176,7 +181,7 @@ $isAllowedRole = in_array($role, $allowedRoles);
 
             <?php if ($isUserLoggedIn) : ?>
                 // Jika pengguna sudah login, lanjutkan ke halaman pemesanan dengan ID mobil
-                window.location.href = '<?= base_url('/pemesanan') ?>/' + carId;
+                window.location.href = '<?= base_url('/pemesanan/') ?>' + carId;
             <?php else : ?>
                 // Jika pengguna belum login, tampilkan pesan dan arahkan ke halaman login
                 alert('Silakan login untuk dapat melakukan pemesanan.');

@@ -63,4 +63,8 @@ class Pages extends BaseController
     {
         return view('Pages/akun');
     }
+    public function pesanan()
+    {
+        return view('Pages/pesanan');
+    }
 }
